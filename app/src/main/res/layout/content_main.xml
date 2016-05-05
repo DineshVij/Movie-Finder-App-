@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.creativeDApps.movieFinder.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:background="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:queryHint="@string/abc_search_hint" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchView">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:background="@drawable/gradient"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Theaters"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20sp"
+        android:textColor="#000000"
+        android:typeface="monospace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="^ Search Movie"
+            android:layout_alignParentRight="true"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10sp"
+            android:textColor="#BABABA"
+            android:typeface="monospace"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_marginTop="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout2"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:id="@+id/lay1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@id/lay1"
+            android:id="@+id/imageView0"
+            android:layout_weight="1"/>
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="0sp"
+        android:layout_alignRight="@id/lay1"
+
+
+            android:id="@+id/imageView1"
+        android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+         <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:id="@+id/movieName1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_alignParentLeft="true"
+             android:layout_marginLeft="10sp"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/actorName1"
+            android:textSize="9sp"
+            android:layout_below="@id/movieName1"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieName2"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:id="@+id/actorName2"
+                android:layout_below="@id/movieName2"
+                android:text="Actors"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:paddingLeft="0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_weight="1"/>
+        <ImageView
+            android:paddingRight="0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:layout_weight="1"/>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/movieName3"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/actorName3"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="9sp"
+                        android:layout_below="@id/movieName3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/movieName4"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        android:id="@+id/actorName4"
+                        android:layout_below="@id/movieName4"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:paddingLeft="0sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:paddingRight="0sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/movieName5"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/actorName5"
+                        android:textSize="9sp"
+                        android:layout_below="@id/movieName5"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/movieName6"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        android:id="@+id/actorName6"
+                        android:layout_below="@id/movieName6"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:paddingLeft="0sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:paddingRight="0sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/movieName7"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/actorName7"
+                        android:layout_below="@id/movieName7"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="9sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/movieName8"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/actorName8"
+                        android:textSize="9sp"
+                        android:layout_below="@id/movieName8"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layout2"
+  >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@id/textView3"
+            android:id="@+id/textView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/textView4"
+        android:id="@+id/test" />
+
+</RelativeLayout>
+</RelativeLayout>
+       </ScrollView>
+</RelativeLayout>
